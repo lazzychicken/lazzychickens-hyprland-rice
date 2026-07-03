@@ -1,0 +1,1 @@
+# lazzychickens-hyprland-rice
