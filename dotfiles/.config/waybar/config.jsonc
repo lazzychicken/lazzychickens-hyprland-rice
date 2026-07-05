@@ -12,19 +12,19 @@
     "margin-right": 10,
 
     "modules-left": [
-        "hyprland/workspaces",
-        ""
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
+       // "custom/pacman",
         "pulseaudio",
         "network",
         "clock",
         "custom/power"
     ],
-    
+
     "hyprland/workspaces": {
     "format": "{name} {icon}",
     "on-click": "activate",
@@ -34,6 +34,13 @@
         "urgent": "!"
     }
 
+    //"custom/pacman": {
+	//"format": "{text}  ",
+	//"interval": "once",
+	//"exec": "pacman_packages",
+	//"on-click": "update-system",
+	//"signal": 8
+    //}
     },
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
