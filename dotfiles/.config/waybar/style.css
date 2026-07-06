@@ -74,6 +74,9 @@ button:hover {
     background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
 }
+#taskbar.empty{
+    border: 0px;
+}
 
 #clock,
 #memory,
