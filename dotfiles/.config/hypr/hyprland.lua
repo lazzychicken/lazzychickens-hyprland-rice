@@ -292,7 +292,7 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 -- Screenshot a window
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 -- Screenshot a region
-hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
+hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
