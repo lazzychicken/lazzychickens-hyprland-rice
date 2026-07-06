@@ -19,7 +19,6 @@
         "hyprland/window"
     ],
     "modules-right": [
-       // "custom/pacman",
         "pulseaudio",
         "network",
         "clock",
@@ -34,15 +33,8 @@
         "default": "○",
         "urgent": "!"
     }
-
-    //"custom/pacman": {
-	//"format": "{text}  ",
-	//"interval": "once",
-	//"exec": "pacman_packages",
-	//"on-click": "update-system",
-	//"signal": 8
-    //}
-      },
+    },
+    
 
     "wlr/taskbar": {
     "format": "{icon}",
@@ -50,9 +42,9 @@
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
+    "on-click-right": "minimize",
     "ignore-list": [
-      "Alacritty",
-      "kitty"
+      "Alacritty"
     ],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
