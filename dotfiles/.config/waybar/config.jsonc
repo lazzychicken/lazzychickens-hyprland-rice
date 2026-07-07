@@ -123,7 +123,7 @@
             "headphone": "",
             "hands-free": "",
             "headset": "",
-            "default": ["", "", ""]
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
