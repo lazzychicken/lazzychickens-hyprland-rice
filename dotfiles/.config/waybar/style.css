@@ -56,14 +56,18 @@ button:hover {
 #workspaces button {
     background-color: transparent;
     color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 15;
+    margin: 3;
 }
 
+
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: #959595;
 }
 
 #workspaces button.focused, #workspaces button.active {
-    background-color: transparent;
+    background-color: #ADADAD;
 }
 
 #workspaces button.urgent {
@@ -89,7 +93,6 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #taskbar,
-#workspaces
 #mpd {
     padding: 0 10px;
     color: #ffffff;
