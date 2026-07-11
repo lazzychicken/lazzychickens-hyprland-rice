@@ -45,7 +45,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    border-radius: 15;
+    border-radius: 15px;
 }
 
 /* you can set a style on hover for any module like this */
@@ -57,8 +57,8 @@ button:hover {
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
-    border-radius: 15;
-    margin: 3;
+    border-radius: 15px;
+    margin: 3px;
 }
 
 
