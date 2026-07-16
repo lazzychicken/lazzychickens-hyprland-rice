@@ -44,7 +44,7 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd("waypaper --restore")
    hl.exec_cmd("hyprpidle")
    hl.exec_cmd("waybar")
-      hl.exec_cmd("awww")
+   hl.exec_cmd("awww")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Classic 24")
 end)
 
@@ -284,8 +284,9 @@ hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 -- Screenshot a region
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 
---open waypaper
+--open system apps
 hl.bind(mainMod .. " + J", hl.dsp.exec_cmd("waypaper"))
+hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("hyprmod"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
@@ -383,3 +384,6 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+-- HyprMod managed settings
+require("hyprland-gui")
