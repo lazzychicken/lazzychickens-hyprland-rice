@@ -41,9 +41,10 @@ local music       = "spotify"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function ()
-   hl.exec_cmd("hyprpaper")
+   hl.exec_cmd("waypaper --restore")
    hl.exec_cmd("hyprpidle")
    hl.exec_cmd("waybar")
+      hl.exec_cmd("awww")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Classic 24")
 end)
 
@@ -276,13 +277,15 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 
 -- Screenshot a window
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 -- Screenshot a region
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
+
+--open waypaper
+hl.bind(mainMod .. " + J", hl.dsp.exec_cmd("waypaper"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
