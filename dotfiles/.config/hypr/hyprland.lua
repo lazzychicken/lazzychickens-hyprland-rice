@@ -288,6 +288,12 @@ hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + J", hl.dsp.exec_cmd("waypaper"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("hyprmod"))
 
+-- Move workspaces
+hl.bind(mainMod .. " + ALT + Left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + ALT + Right", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. " + ALT + Up",    hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. " + ALT + Down",  hl.dsp.window.move({ direction = "down" }))
+
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
