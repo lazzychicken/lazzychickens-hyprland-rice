@@ -44,7 +44,7 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd("waypaper --restore")
    hl.exec_cmd("hyprpidle")
    hl.exec_cmd("waybar")
-   hl.exec_cmd("awww")
+--   hl.exec_cmd("awww")
    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Classic 24")
 end)
 

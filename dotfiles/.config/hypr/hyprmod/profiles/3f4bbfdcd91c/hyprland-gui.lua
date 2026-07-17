@@ -10,12 +10,13 @@ hl.config({
         blur = {
             enabled = true,
         },
+        rounding = 10,
     },
     general = {
         gaps_out = 10,
     },
     misc = {
-        disable_splash_rendering = false,
+        disable_splash_rendering = true,
     },
 })
 
